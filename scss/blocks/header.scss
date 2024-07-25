@@ -37,6 +37,7 @@
 }
 
 .header__bottom {
+  min-height: 38px;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
@@ -120,16 +121,15 @@
   top: -200vh;
   left: 0;
   z-index: 20;
-  background-color: #fff;
-  color: #000;
+  background-color: #03111a;
+  color: #fff;
   transition: all 500ms ease;
-  background-image: url("../public/img/about/about_bg.jpg");
   background-size: cover;
   font-family: var(--second-family);
 }
 
 .header__menu.visible {
-  top: 0;
+  top: -16px;
 }
 
 .menu__list {
@@ -141,7 +141,7 @@
 }
 
 .header__menu-btn {
-  width: 62px;
+  width: 64px;
   display: none;
   flex-direction: column;
   align-items: end;
@@ -156,7 +156,7 @@
   div {
     width: 100%;
     height: 2px;
-    background-color: #94cbff;
+    background-color: #fff;
     border-radius: 10px;
     transition: all 200ms ease;
   }
