@@ -1499,7 +1499,7 @@ body {
 @media screen and (max-width: 1079px) {
   .download__name {
     font-size: 10px;
-    translate: 0 0;
+    translate: 0 5px;
   }
 }
 
@@ -1510,7 +1510,7 @@ body {
 }
 @media screen and (max-width: 1079px) {
   .download__rating {
-    translate: 0 0;
+    translate: 0 -5px;
   }
 }
 .download__rating span:first-of-type {
