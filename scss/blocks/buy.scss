@@ -1,112 +1,121 @@
 .buy {
-  padding-bottom: 114px;
+  padding-top: 227px;
+  padding-bottom: 143px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #000;
   position: relative;
-  z-index: 1;
 
   @media screen and (max-width: 1079px) {
-    padding-bottom: 45px;
+    padding-top: 113px;
+    padding-bottom: 40px;
   }
 }
 
-.buy__container {
-  width: min(1310px, 100%);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .buy__title {
-  margin-bottom: 102px;
-  font-size: 80px;
-  line-height: 93%;
+  margin-bottom: 64px;
+  font-weight: 900;
+  font-size: 47px;
   text-transform: uppercase;
-  color: #3faae8;
+  color: #fff;
+  text-align: center;
 
   @media screen and (max-width: 1079px) {
-    margin-bottom: 43px;
-    font-size: 52px;
-    text-align: center;
+    margin-bottom: 57px;
+    font-size: 36px;
   }
 }
 
 .buy__steps {
-  margin-bottom: 55px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 
   @media screen and (max-width: 1079px) {
-    width: fit-content;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
     flex-direction: column;
-    gap: 25px;
+    align-items: center;
+    gap: 27px;
   }
 
   li {
-    padding: 30px 18px;
-    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    @media screen and (max-width: 1079px) {
-      padding: 24px 15px;
+    div {
+      width: 29px;
+      height: 29px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #fff;
+      font-size: 21px;
+      text-transform: uppercase;
+      color: #000;
     }
 
     h3 {
+      margin-top: 10px;
       margin-bottom: 40px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--second-family);
       font-size: 31px;
-      color: #000;
+      text-align: center;
+      color: #fff;
 
       @media screen and (max-width: 1079px) {
-        width: fit-content;
-        margin-bottom: 33px;
-        font-size: 26px;
+        margin-top: 18px;
+        margin-bottom: 15px;
+        font-size: 23px;
       }
     }
 
     p {
-      font-family: var(--second-family);
+      max-width: 361px;
+      font-family: var(--font-family);
+      font-weight: 400;
       font-size: 18px;
       line-height: 180%;
-      color: #000;
-
-      @media screen and (max-width: 1079px) {
-        max-width: 344px;
-        font-size: 15px;
-      }
+      text-align: center;
+      color: #fff;
     }
   }
 }
 
-.buy__btn {
-  width: 241px;
-  height: 55px;
-  border: 1px solid #000;
+.buy__ticker {
+  width: 100%;
+  height: 80px;
+  background: #03111a;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
-  color: #000;
-  transition: box-shadow 200ms ease;
+  overflow: hidden;
+  z-index: 2;
+  user-select: none;
 
-  @media screen and (max-width: 1079px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  .ticker__wrap {
+    display: flex;
+    align-items: center;
+    gap: 124px;
+    animation: tickerMove 20s linear infinite;
+    padding-right: 103px;
+    padding-left: 20px;
 
-  &:hover {
-    box-shadow: 0 0 10px #ccc inset;
-  }
-  &:active {
-    box-shadow: 0 0 2px #ccc inset;
+    span {
+      font-family: var(--font-family);
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 100%;
+      color: #fff;
+
+      &:nth-of-type(2n) {
+        background: linear-gradient(92deg, #0cf3a8 0%, #d724fd 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: linearText 2s linear infinite;
+      }
+    }
   }
 }

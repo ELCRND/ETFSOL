@@ -112,15 +112,22 @@
   font-weight: 500;
   font-size: 15px;
   color: #fff;
+  translate: 0 8px;
 
   @media screen and (max-width: 1079px) {
     font-size: 10px;
+    translate: 0 0;
   }
 }
 
 .download__rating {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
+  translate: 0 -8px;
+
+  @media screen and (max-width: 1079px) {
+    translate: 0 0;
+  }
 
   span {
     &:first-of-type {
