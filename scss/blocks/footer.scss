@@ -33,14 +33,13 @@
 
 .footer__title {
   max-width: 188px;
-  font-weight: 700;
   font-size: 77px;
   line-height: 65%;
   letter-spacing: 0.22em;
   text-align: center;
   color: #fff;
   align-self: center;
-  text-shadow: 0 -5px 0 #03111a;
+  text-shadow: 0 -2px 1px #03111a;
 
   @media screen and (max-width: 1079px) {
     grid-row: 1 / 2;
@@ -204,7 +203,7 @@
     }
   }
 
-  div {
+  & > div {
     margin-top: 37px;
     display: flex;
     gap: 12px;

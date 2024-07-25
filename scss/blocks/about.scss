@@ -20,6 +20,10 @@
     background-size: cover;
     background-position: center;
     z-index: 1;
+
+    @media screen and (max-width: 1079px) {
+      background-position: 47.5% 20px;
+    }
   }
 }
 
