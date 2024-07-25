@@ -1,0 +1,112 @@
+.buy {
+  padding-bottom: 114px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 1079px) {
+    padding-bottom: 45px;
+  }
+}
+
+.buy__container {
+  width: min(1310px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.buy__title {
+  margin-bottom: 102px;
+  font-size: 80px;
+  line-height: 93%;
+  text-transform: uppercase;
+  color: #3faae8;
+
+  @media screen and (max-width: 1079px) {
+    margin-bottom: 43px;
+    font-size: 52px;
+    text-align: center;
+  }
+}
+
+.buy__steps {
+  margin-bottom: 55px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+
+  @media screen and (max-width: 1079px) {
+    width: fit-content;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  li {
+    padding: 30px 18px;
+    border: 1px solid #000;
+
+    @media screen and (max-width: 1079px) {
+      padding: 24px 15px;
+    }
+
+    h3 {
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--second-family);
+      font-size: 31px;
+      color: #000;
+
+      @media screen and (max-width: 1079px) {
+        width: fit-content;
+        margin-bottom: 33px;
+        font-size: 26px;
+      }
+    }
+
+    p {
+      font-family: var(--second-family);
+      font-size: 18px;
+      line-height: 180%;
+      color: #000;
+
+      @media screen and (max-width: 1079px) {
+        max-width: 344px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.buy__btn {
+  width: 241px;
+  height: 55px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  transition: box-shadow 200ms ease;
+
+  @media screen and (max-width: 1079px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px #ccc inset;
+  }
+  &:active {
+    box-shadow: 0 0 2px #ccc inset;
+  }
+}
